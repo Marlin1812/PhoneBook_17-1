@@ -62,8 +62,8 @@ public class AddNewContact extends TestBase{
         app.getUser().click(By.xpath("//div[@class='add_form__2rsm2']//button"));
 
         Assert.assertTrue(
-        app.getUser().getText(By.xpath("" +
-                "//div[@class='contact-item_card__2SOIM'][last()]//h3")).equals(phone)
+                app.getUser().getText(By.xpath("" +
+                        "//div[@class='contact-item_card__2SOIM'][last()]//h3")).equals(phone)
         );
     }
 

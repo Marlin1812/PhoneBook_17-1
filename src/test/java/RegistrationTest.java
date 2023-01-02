@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class RegistrationTest extends TestBase {
 
-//    WebDriver wd;
+    //    WebDriver wd;
 //
     @BeforeMethod
     public void preCondition(){
