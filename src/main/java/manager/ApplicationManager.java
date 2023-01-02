@@ -32,7 +32,6 @@ public class ApplicationManager {
 //        wd = new ChromeDriver();
         if(browser.equals(BrowserType.FIREFOX)){
             wd = new EventFiringWebDriver(new FirefoxDriver());
-            wd.manage().window().maximize();
             logger.info("Tests on FIREFOX");
         } else if(browser.equals(BrowserType.CHROME)){
             wd = new EventFiringWebDriver(new ChromeDriver());
