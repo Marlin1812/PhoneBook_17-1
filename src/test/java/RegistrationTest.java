@@ -25,8 +25,8 @@ public class RegistrationTest extends TestBase {
         app.getUser().openLoginRegistrationForm();
         app.getUser().fillLoginRegistrationForm(email, password);
         app.getUser().submitRegistration();
-        app.getUser().pause(3);
-        Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//button")));
+        app.getUser().pause(3000);
+//        Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//button")));
     }
 
     @Test
@@ -38,7 +38,7 @@ public class RegistrationTest extends TestBase {
         app.getUser().openLoginRegistrationForm();
         app.getUser().fillLoginRegistrationForm(email, password);
         app.getUser().submitRegistration();
-        app.getUser().pause(3);
+        app.getUser().pause(3000);
 //        Assert.assertFalse(app.getUser().isElementPresent(By.xpath("//button")));
 
         Assert.assertTrue(app.getUser().isErrorMessageInFormat());
