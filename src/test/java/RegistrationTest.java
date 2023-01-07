@@ -43,6 +43,9 @@ public class RegistrationTest extends TestBase {
 
         Assert.assertTrue(app.getUser().isErrorMessageInFormat());
         Assert.assertTrue(app.getUser().isAlertPresent());
+
+        app.getUser().openStartForm();
+
     }
 
 
