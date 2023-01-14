@@ -10,15 +10,12 @@ public class AddNewContact extends TestBase{
     @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         if(app.getUser().isLogged()){
-            app.getUser().pause(3000);
-
-
+            app.getUser().pause(3);
         } else {
             app.getUser().openLoginRegistrationForm();
             app.getUser().fillLoginRegistrationForm("abc@def.com", "$Abcdef12345");
             app.getUser().submitLogin();
-            app.getUser().pause(3000);
-
+            app.getUser().pause(3);
         }
     }
     @Test(invocationCount = 5, groups = {"positivegroup", "smokegroup"})
@@ -36,12 +33,11 @@ public class AddNewContact extends TestBase{
         app.getContact().openContactForm();
         app.getContact().fillContactForm(contact);
         app.getContact().submitContactForm();
-//        app.getUser().openStartForm();
 
-//        Assert.assertTrue(
-//                app.getUser().getText(By.xpath("" +
-//                        "//div[@class='contact-item_card__2SOIM'][last()]//h3")).equals(contact.getPhone())
-//        );
+        Assert.assertTrue(
+                app.getUser().getText(By.xpath("" +
+                        "//div[@class='contact-item_card__2SOIM'][last()]//h3")).equals(contact.getPhone())
+        );
     }
 
     @Test
@@ -63,13 +59,12 @@ public class AddNewContact extends TestBase{
         app.getUser().type(By.xpath("//input[6]"), description);
         app.getUser().click(By.xpath("//div[@class='add_form__2rsm2']//button"));
 
-//        Assert.assertTrue(
-//                app.getUser().getText(By.xpath("" +
-//                        "//div[@class='contact-item_card__2SOIM'][last()]//h3")).equals(phone)
-//        );
+        Assert.assertTrue(
+                app.getUser().getText(By.xpath("" +
+                        "//div[@class='contact-item_card__2SOIM'][last()]//h3")).equals(phone)
+        );
     }
 
 //    @AfterMethod
-
 
 }

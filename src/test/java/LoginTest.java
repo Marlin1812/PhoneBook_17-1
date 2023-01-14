@@ -11,16 +11,17 @@ public class LoginTest extends TestBase{
 
     WebDriver wd;
 
-    @BeforeMethod
-    public void init(){
-        wd = new ChromeDriver();
-        wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/home");
-
-    }
+//    @BeforeMethod
+//    public void init(){
+//        wd = new ChromeDriver();
+//        wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/home");
+//
+//    }
 
     @Test
     public void loginPositiveTest(){
         // open login/reg form
+        app.getUser().pause(3000);
         WebElement loginBtn = wd.findElement(By.xpath("//a[text()='LOGIN']"));
         loginBtn.click();
         // fill login/reg form

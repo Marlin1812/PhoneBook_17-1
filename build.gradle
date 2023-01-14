@@ -35,13 +35,13 @@ task tests(type:Test){
         }
 
         def suite = System.getProperty('suite','')
-        if(suite.equals('addTests')){
+        if(suite.equals('add_tests')){
             suites 'src/test/resources/add.xml'
-        } else if(suite.equals('regTests')){
+        } else if(suite.equals('regtests')){
             suites 'src/test/resources/reg.xml'
-        } else if(suite.equals('smokeTests')){
+        } else if(suite.equals('smoketests')){
             suites 'src/test/resources/smoke.xml'
-        } else if(suite.equals('regressTests')){
+        } else if(suite.equals('regresstests')){
             suites 'src/test/resources/regression.xml'
         } else {
             suites 'src/test/resources/testng.xml'

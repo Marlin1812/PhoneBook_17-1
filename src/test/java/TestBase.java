@@ -17,12 +17,12 @@ public class TestBase {
             System.getProperty("browser", BrowserType.CHROME));
 //    WebDriver wd;
 
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     public void setUp(){
         app.init();
     }
 
-    @AfterSuite
+    @AfterSuite(alwaysRun = true)
     public void tearDown(){
         app.stop();
     }
