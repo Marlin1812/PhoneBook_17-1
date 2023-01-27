@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RemoveContactTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-21T18:00:03" hostname="LAPTOP-VMDB1CS4" time="72.236">
+<testsuite name="RemoveContactTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-21T18:41:31" hostname="LAPTOP-VMDB1CS4" time="74.823">
   <properties/>
-  <testcase name="removeAllContactsPositive" classname="RemoveContactTest" time="72.236"/>
-  <system-out><![CDATA[20:00:08.296 [Test worker] INFO manager.HelperContact - Number of contacts before is 6
-20:00:08.325 [Test worker] INFO manager.HelperContact - The deleted number is 0556667773585
-20:00:11.901 [Test worker] INFO manager.HelperContact - Number of contacts after is 5
-20:00:14.937 [Test worker] INFO manager.HelperContact - Number of contacts before is 5
-20:00:14.962 [Test worker] INFO manager.HelperContact - The deleted number is 0556667773589
-20:00:18.503 [Test worker] INFO manager.HelperContact - Number of contacts after is 4
-20:00:21.545 [Test worker] INFO manager.HelperContact - Number of contacts before is 4
-20:00:21.570 [Test worker] INFO manager.HelperContact - The deleted number is 0556667773591
-20:00:25.146 [Test worker] INFO manager.HelperContact - Number of contacts after is 3
-20:00:28.269 [Test worker] INFO manager.HelperContact - Number of contacts before is 3
-20:00:28.360 [Test worker] INFO manager.HelperContact - The deleted number is 0556667773594
-20:00:32.165 [Test worker] INFO manager.HelperContact - Number of contacts after is 2
-20:00:35.207 [Test worker] INFO manager.HelperContact - Number of contacts before is 2
-20:00:35.235 [Test worker] INFO manager.HelperContact - The deleted number is 0556667773597
-20:00:38.783 [Test worker] INFO manager.HelperContact - Number of contacts after is 1
-20:00:41.830 [Test worker] INFO manager.HelperContact - Number of contacts before is 1
-20:00:41.861 [Test worker] INFO manager.HelperContact - The deleted number is 0556667770
-20:00:55.425 [Test worker] INFO manager.HelperContact - Number of contacts after is 0
+  <testcase name="removeAllContactsPositive" classname="RemoveContactTest" time="74.823"/>
+  <system-out><![CDATA[20:41:36.614 [Test worker] INFO manager.HelperContact - Number of contacts before is 6
+20:41:36.642 [Test worker] INFO manager.HelperContact - The deleted number is 0556667772458
+20:41:40.925 [Test worker] INFO manager.HelperContact - Number of contacts after is 5
+20:41:43.976 [Test worker] INFO manager.HelperContact - Number of contacts before is 5
+20:41:44.004 [Test worker] INFO manager.HelperContact - The deleted number is 0556667772464
+20:41:48.291 [Test worker] INFO manager.HelperContact - Number of contacts after is 4
+20:41:51.340 [Test worker] INFO manager.HelperContact - Number of contacts before is 4
+20:41:51.380 [Test worker] INFO manager.HelperContact - The deleted number is 0556667772469
+20:41:55.670 [Test worker] INFO manager.HelperContact - Number of contacts after is 3
+20:41:58.732 [Test worker] INFO manager.HelperContact - Number of contacts before is 3
+20:41:58.761 [Test worker] INFO manager.HelperContact - The deleted number is 0556667772475
+20:42:03.064 [Test worker] INFO manager.HelperContact - Number of contacts after is 2
+20:42:06.106 [Test worker] INFO manager.HelperContact - Number of contacts before is 2
+20:42:06.128 [Test worker] INFO manager.HelperContact - The deleted number is 0556667772480
+20:42:09.678 [Test worker] INFO manager.HelperContact - Number of contacts after is 1
+20:42:12.736 [Test worker] INFO manager.HelperContact - Number of contacts before is 1
+20:42:12.761 [Test worker] INFO manager.HelperContact - The deleted number is 0556667772486
+20:42:26.315 [Test worker] INFO manager.HelperContact - Number of contacts after is 0
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[1674326497186	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1674326504549	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1674326511924	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1674326519300	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+]]></system-err>
 </testsuite>

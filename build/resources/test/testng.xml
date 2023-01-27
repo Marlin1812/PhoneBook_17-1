@@ -5,7 +5,6 @@
         <classes>
             <class name="AddNewContact" />
             <class name="RemoveContactTest" />
-            <class name="LoginTest" />
         </classes>
     </test>
 </suite>
